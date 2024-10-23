@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #052e16;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.logo,
+.heading {
+    font-family: 'Lobster', sans-serif;
+}
+
+.nav-link:hover {
+    color: #f59e0b;
+}
+
+.para-1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 0.9em;
+}
+
+.para-2 {
+    font-family: 'Lobster', sans-serif;
+}
+
+/* Animation for moving Y-axis */
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+/* Animation for rotating */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for scaling up */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* Class for moving Y-axis animation */
+.animate-movingY {
+    animation: move 3s linear infinite;
+}
+
+/* Class for rotating animation */
+.animate-rotating {
+    animation: rotate 15s linear infinite;
+}
+
+/* Class for scaling up animation */
+.animate-scalingUp {
+    animation: scaleUp 3s linear infinite;
+}
+
+/* Combined class for all animations */
+.animate-all {
+    animation: move 3s linear infinite, rotate 15s linear infinite, scaleUp 3s linear infinite;
+}
+.swiper-pagination-bullet {
+        background-color: #22c55e; /* Equivalent to bg-green-500 in Tailwind */
+        height: 12px;             /* Equivalent to h-3 */
+        width: 12px;              /* Equivalent to w-3 */
+      
+}
