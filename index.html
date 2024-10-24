@@ -18,13 +18,14 @@
 </head>
 
 <body class="tracking-wider w-full ">
+   <!-- commented Header: in this header i can make a mobile navigation and large screen navigation seprated  -->
     <!-- Header starts -->
-    <header id="navbar" class="w-full top-0 left-0 z-50">
+    <!-- <header id="navbar" class="w-full top-0 left-0 z-50">
         <nav class="container flex items-center justify-between h-16 sm:h-20">
-            <div class="logo sm:text-2xl ml-28">IndorePlants.</div>
+            <div class="logo sm:text-2xl ml-28">IndorePlants.</div> -->
 
             <!-- mobile-navigation-starts -->
-            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex
+            <!-- <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex
             items-center justify-center duration-300 ease-in-out lg:hidden md:hidden">
                 <ul class="flex flex-col items-center gap-8">
                     <li>
@@ -39,30 +40,72 @@
                     <li>
                         <a href="#review" class="nav-link text-lg font-bold duration-300">Review</a>
                     </li>
-                </ul>
+                </ul> -->
                 <!-- images in mobile navbar -->
-                <div class="absolute bottom-0 -right-10 opacity-90">
+                <!-- <div class="absolute bottom-0 -right-10 opacity-90">
                     <img src="assets/images/leaf-1.png" alt="leaf-1" class="w-32">
                 </div>
                 <div class="absolute -top-5 -left-5 rotate-90 opacity-90">
                     <img src="assets/images/leaf-2.png" alt="leaf-2" class="w-32">
                 </div>
-            </div>
+            </div> -->
 
             <!-- menu-icons -->
-            <div class="text-xl sm:text-3xl cursor-pointer z-50 mr-14 lg:hidden md:hidden">
+            <!-- <div class="text-xl sm:text-3xl cursor-pointer z-50 mr-14 lg:hidden md:hidden">
                 <i class="ri-menu-4-line" id="hamburger"></i>
                 <i class="ri-close-line hidden" id="close"></i>
-            </div>
+            </div> -->
             <!-------- mobile-navigation-Ends ------>
 
             <!-- navbar -->
-            <div class="hidden  items-center mr-20 font-semibold lg:block md:block">
+            <!-- <div class="hidden  items-center mr-20 font-semibold lg:block md:block">
                 <a href="#home" class="nav-link m-6">Home</a>
                 <a href="#about" class="nav-link m-6">About</a>
                 <a href="#popular" class="nav-link m-6">Popular</a>
                 <a href="#review" class="nav-link m-0">Review</a>
             </div>
+        </nav>
+    </header> -->
+
+    <!-- Header ends -->
+
+    <!-- Header starts -->
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 sm:h-20">
+            <div class="logo sm:text-2xl ml-10 lg:ml-28 md:ml-28">IndorePlants.</div>
+
+            <!-- mobile-navigation-starts -->
+            <div id="nav-menu" class="absolute top-0 left-0 min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex
+            items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="#home" class="nav-link text-lg font-bold duration-300 hover:text-yellow-500">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link text-lg font-bold duration-300 hover:text-yellow-500">About</a>
+                    </li>
+                    <li>
+                        <a href="#popular" class="nav-link text-lg font-bold duration-300 hover:text-yellow-500">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="nav-link text-lg font-bold duration-300 hover:text-yellow-500">Review</a>
+                    </li>
+                </ul>
+                <!-- images in mobile navbar -->
+                <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden md:hidden">
+                    <img src="assets/images/leaf-1.png" alt="leaf-1" class="w-32">
+                </div>
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden md:hidden">
+                    <img src="assets/images/leaf-2.png" alt="leaf-2" class="w-32">
+                </div>
+            </div>
+
+            <!-- menu-icons -->
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 mr-5 lg:hidden md:mr-10">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+                <i class="ri-close-line hidden" id="close"></i>
+            </div>
+            <!-------- mobile-navigation-Ends ------>
         </nav>
     </header>
     <!-- Header ends -->
@@ -177,7 +220,7 @@
     </div>
     <!--------- Services-section-Ends ------>
 
-    <!-------- ABout-Us-Section-Starts --------->
+   !-------- ABout-Us-Section-Starts --------->
     <section id="About-us" class="relative overflow-hidden mt-14 w-[100%]">
         <div class="main-div flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
             <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500"
@@ -211,7 +254,7 @@
                 </div>
                 <!-- item-2 -->
                 <div
-                    class="about-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[80%] lg:gap-5 md:gap-10  lg:mx-auto ">
+                    class="about-2 ml-9 md:ml-0 lg:ml-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-[80%] lg:gap-5 md:gap-10  lg:mx-auto ">
                     <!-- content -->
                     <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"
                         class=" md:w-[400px] lg:mt-32 md:mt-32 ml-10  lg:ml-20">
@@ -233,7 +276,6 @@
         </div>
     </section>
     <!-------- ABout-Us-Section-Ends --------->
-
 
     <!------ popular-section-starts ------->
     <section id="popular" class="mt-28 lg:ml-0 bg-green-900 max-w-[100%]">
